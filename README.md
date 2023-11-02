@@ -37,4 +37,4 @@ A News App for Android, build with Native Kotlin & Jetpack Compose
 
 - Get your KEY API from <a href="https://newsapi.org" target="_blank">here</a>
 - Add Key API to local.properties ex: API_KEY=[your APIKEY]
-- rebuild & compile on Android Studio
+- rebuild & compile on Android Studio (REQUIRED)
