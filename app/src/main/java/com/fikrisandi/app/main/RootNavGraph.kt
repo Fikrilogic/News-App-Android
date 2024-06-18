@@ -1,7 +1,6 @@
 package com.fikrisandi.app.main
 
 import com.fikrisandi.home.HomeNavGraph
-import com.fikrisandi.news.detail.NewsNavGraph
 import com.ramcosta.composedestinations.spec.DestinationSpec
 import com.ramcosta.composedestinations.spec.NavGraphSpec
 import com.ramcosta.composedestinations.spec.Route
@@ -16,6 +15,5 @@ object RootNavGraph: NavGraphSpec {
 
     override val nestedNavGraphs: List<NavGraphSpec> = listOf(
         HomeNavGraph,
-        NewsNavGraph
     )
 }

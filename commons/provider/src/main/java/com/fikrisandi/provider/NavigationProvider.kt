@@ -1,13 +1,13 @@
 package com.fikrisandi.provider
 
 import androidx.navigation.NavOptionsBuilder
-import com.fikrisandi.model.remote.news.News
+import com.fikrisandi.model.remote.user.User
 
 interface NavigationProvider {
     fun navigateBack()
 
 
-    fun navigateToDetail(news: News, option: NavOptionsBuilder.() -> Unit = {})
+    fun navigateToDetail(user: User, option: NavOptionsBuilder.() -> Unit = {})
 }
 
 object EmptyNavigationProvider: NavigationProvider{
@@ -15,7 +15,7 @@ object EmptyNavigationProvider: NavigationProvider{
         TODO("Not yet implemented")
     }
 
-    override fun navigateToDetail(news: News, option: NavOptionsBuilder.() -> Unit) {
+    override fun navigateToDetail(user: User, option: NavOptionsBuilder.() -> Unit) {
         TODO("Not yet implemented")
     }
 

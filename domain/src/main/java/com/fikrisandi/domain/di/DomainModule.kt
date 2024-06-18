@@ -1,7 +1,8 @@
 package com.fikrisandi.domain.di
 
-import com.fikrisandi.domain.news.GetListNews
-import com.fikrisandi.repository.repository.news.NewsRepository
+import com.fikrisandi.domain.user.GetListUser
+import com.fikrisandi.domain.user.GetUserByUsername
+import com.fikrisandi.repository.repository.user.UserRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,7 +15,9 @@ class DomainModule {
 
     @Provides
     @Singleton
-    fun provideGetListNews(repository: NewsRepository) = GetListNews(repository)
+    fun provideGetListUser(repository: UserRepository) = GetListUser(repository)
 
-
+    @Provides
+    @Singleton
+    fun provideGetUserByUsername(repository: UserRepository) = GetUserByUsername(repository)
 }

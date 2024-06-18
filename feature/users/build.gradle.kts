@@ -2,10 +2,8 @@ import extension.COMPONENT
 import extension.DOMAIN
 import extension.FRAMEWORK
 import extension.MODEL
-import extension.NEWS
 import extension.PROVIDER
 import extension.THEME
-import extension.USER
 import extension.addDestinationDependency
 import extension.addHiltDependency
 
@@ -17,15 +15,16 @@ plugins {
 }
 
 android {
-    namespace = "com.fikrisandi.home"
+    namespace = "com.fikrisandi.users"
 }
 
 ksp{
     arg("compose-destinations.mode", "navgraphs")
-    arg("compose-destinations.moduleName", "home")
+    arg("compose-destinations.moduleName", "news")
 }
 
 dependencies {
+
     THEME
     PROVIDER
     COMPONENT
@@ -35,8 +34,7 @@ dependencies {
     MODEL
     DOMAIN
 
-    USER
-
     addHiltDependency()
     addDestinationDependency()
+    implementation(SupportLibs.coil)
 }

@@ -182,7 +182,7 @@ fun DependencyHandler.addModule(){
     DOMAIN
 
     HOME
-    NEWS
+    USER
 
 }
 
@@ -207,3 +207,5 @@ val DependencyHandler.HOME
     get() = implementation(project(mapOf("path" to ":feature:home")))
 val DependencyHandler.NEWS
     get() = implementation(project(mapOf("path" to ":feature:news")))
+val DependencyHandler.USER
+    get() = implementation(project(mapOf("path" to ":feature:users")))

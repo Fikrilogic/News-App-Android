@@ -5,8 +5,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.fikrisandi.news.list.NewsListScreen
 import com.fikrisandi.provider.NavigationProvider
+import com.fikrisandi.users.list.UserListScreen
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.annotation.RootNavGraph
 
@@ -19,6 +19,6 @@ fun HomeScreen(
 ) {
     Scaffold {
         val modifier = modifier.padding(it)
-        NewsListScreen(modifier = modifier, navigationProvider = navigationProvider)
+        UserListScreen(modifier = modifier, navigationProvider = navigationProvider)
     }
 }

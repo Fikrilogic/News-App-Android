@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "NewsApp"
+rootProject.name = "Github User Catalog"
 include(":app")
 include(":commons:theme")
 include(":commons:provider")
@@ -23,4 +23,4 @@ include(":data:repository")
 include(":domain")
 include(":library:framework")
 include(":feature:home")
-include(":feature:news")
+include(":feature:users")
